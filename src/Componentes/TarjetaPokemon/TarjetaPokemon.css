@@ -1,0 +1,38 @@
+.plantillaPokemon{
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+p{
+    grid-area: p;
+    text-align: end;
+    padding-right: 30px;
+}
+
+.imgTarjeta{
+    grid-area: imgTarjeta;
+    display: flex;
+    justify-content: center;
+}
+
+.h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: h3;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.bulbasaur, .charmander, .squirtle, .butterfree, .pikachu, .gastly, .ditto, .mew, .aron{
+    display: grid;
+    grid-template-rows: 0.2fr 1.5fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "p"
+    "imgTarjeta"
+    "h3";
+    width: 100%; 
+    border-radius: 20px;
+}

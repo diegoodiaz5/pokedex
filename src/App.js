@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Componentes/Header/Header'
+import Buscador from './Componentes/Buscador/Buscador'
+import Section from './Componentes/Section/Section'
+import listaDePokemons from './Componentes/DatosPokemons/listaPokemons';
+import { useState } from 'react';
 
 function App() {
-  return (
+  const [buscar, setBuscar] = useState;
+     return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Buscador buscarPorLetra = {setBuscar}/>
+      <Section pokemons={listaDePokemons}/>
     </div>
   );
 }
