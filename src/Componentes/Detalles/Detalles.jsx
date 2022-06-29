@@ -20,6 +20,9 @@ export default function Detalles() {
             <h2 className="h2">#304</h2>
           </div>
         </div>
+        <div className="imageFondo">
+          <img src="./index/img/Pokeball.png" alt="pokeball" />
+        </div>
         <div className="imagenPoke">
           <img
             className="imgPoke"
