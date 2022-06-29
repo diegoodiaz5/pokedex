@@ -7,7 +7,7 @@ export default function Section({ pokemons }) {
   return (
     <div className="tarjetas">
       {pokemons.map((pokemon) => (
-        <TarjetaPokemon pokemon={pokemon} />
+        <TarjetaPokemon pokemon={pokemon} key={pokemon.numero} />
       ))}
     </div>
   );

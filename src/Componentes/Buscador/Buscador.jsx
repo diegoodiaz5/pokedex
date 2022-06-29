@@ -1,16 +1,22 @@
 import "./Buscador.css";
 import Lupa from "../Materiales/lupa.png";
+import { useState } from "react";
 
 export default function Buscador() {
+  const [valor, setValor] = useState();
+  console.log(document.getElementsByClassName("input"));
+
   return (
     <div className="buscador">
       <div className="inputContenedor">
         <input
           type="search"
-          className="input"
+          id="input"
           placeholder="Buscar"
-          onChange={() => {}}
+          value={valor}
+          onChange={(ev) => setValor(ev.target.value)}
         />
+
         <img
           src={Lupa}
           className="input-icon"
