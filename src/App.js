@@ -7,13 +7,19 @@ import { useState } from 'react'
 
 function App() {
   const [lista, setLista] = useState(listaDePokemons)
-  // const [ordenandoPorNombre, setOrdenandoPorNombre] = useState (false)
+  const [ordenandoPorNombre, setOrdenandoPorNombre] = useState (false)
   const ordenar = () => {
-    console.log("hola")
-    const listaOrdenada = lista.sort((a, b) => 
+    if (ordenandoPorNombre === false) {
+      const listaOrdenada = lista.sort((a, b) => 
      a.nombre > b.nombre ? 1 : a.nombre < b.nombre ? -1 : 0)
-     setLista([... listaOrdenada])
-     console.log(listaOrdenada)
+     setLista([...listaOrdenada])
+     setOrdenandoPorNombre(true);
+    } else {
+    const listaOrdenada = lista.sort((a, b) => 
+     a.numero > b.numero ? 1 : a.numero < b.numero ? -1 : 0)
+     setLista([...listaOrdenada])
+     setOrdenandoPorNombre(false)
+    }
   }
 
      return (
