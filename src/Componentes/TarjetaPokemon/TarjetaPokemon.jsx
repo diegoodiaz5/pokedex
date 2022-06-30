@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import "./TarjetaPokemon.css";
 
 export default function TarjetaPokemon({ pokemon }) {
   return (
-    <div className="plantillaPokemon">
+    <Link to={`detalles/${pokemon.nombre}`} className="plantillaPokemon">
       <div
         className={pokemon.claseCSS}
         style={{
@@ -10,7 +11,9 @@ export default function TarjetaPokemon({ pokemon }) {
           borderWidth: "4px 4px 10px 4px",
         }}
       >
-        <p style={{ color: pokemon.colorPrimario }}>#{pokemon.numero}</p>
+        <p className="numPoke" style={{ color: pokemon.colorPrimario }}>
+          #{pokemon.numero}
+        </p>
         <div className="imgTarjeta">
           <img src={pokemon.imagen} alt="" />
         </div>
@@ -18,6 +21,6 @@ export default function TarjetaPokemon({ pokemon }) {
           <h3>{pokemon.nombre}</h3>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

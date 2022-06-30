@@ -1,6 +1,8 @@
 header {
     display: flex;
     justify-content: space-between;
+    padding-left: 41px;
+    padding-right: 41px;
 }
 
 .titulo, .filtro{
@@ -13,5 +15,5 @@ header {
 }
 
 .filtro{
-    gap: 10px
+    gap: 10px;
 }

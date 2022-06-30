@@ -1,9 +1,8 @@
-import './App.css'
-import Header from './Componentes/Header/Header.jsx'
-import Buscador from './Componentes/Buscador/Buscador'
-import Section from './Componentes/Section/Section.jsx'
 import listaDePokemons from './Componentes/DatosPokemons/listaPokemons'
 import { useState } from 'react'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import Principal from "./Componentes/Principal/Principal.jsx"
+import Detalles from './Componentes/Detalles/Detalles'
 
 function App() {
 
@@ -37,11 +36,14 @@ function App() {
   }
 
      return (
-    <div className="App">
-       <Header ordenarPorNombre={ordenar} ordenandoPorNombre={ordenandoPorNombre}/> 
-      <Buscador filtrado={handleChange}/>
-      <Section pokemons={lista}/>
-    </div>
+
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Principal ordenar={ordenar} handleChange={handleChange} ordenandoPorNombre={ordenandoPorNombre} lista={lista}/>}/>
+        <Route path="detalles/:nombre" element={<Detalles lista={listaDePokemons}/>}/>
+        </Routes>
+      </BrowserRouter>
+    
   );
 }
 

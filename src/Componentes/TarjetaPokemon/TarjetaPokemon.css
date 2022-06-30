@@ -1,9 +1,14 @@
 .plantillaPokemon{
     width: 30%;
     padding-bottom: 20px;
+    text-decoration: none;
 }
 
-p{
+.plantillaPokemon:hover{
+    opacity: 80%;
+}
+
+.numPoke{
     grid-area: p;
     text-align: end;
     padding-right: 30px;
@@ -36,3 +41,4 @@ p{
     width: 100%; 
     border-radius: 20px;
 }
+
