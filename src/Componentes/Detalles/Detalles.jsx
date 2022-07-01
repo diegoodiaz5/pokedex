@@ -10,7 +10,9 @@ import ArrowNext from "../Materiales/arrow-next.svg";
 
 export default function Detalles({ lista }) {
   const { nombre } = useParams();
-  const indicePokemon = lista.findIndex((pkmn) => pkmn.nombre === nombre);
+  const indicePokemon = lista.findIndex(
+    (pkmn) => pkmn.nombre.toLowerCase() === nombre.toLowerCase()
+  );
   const pokemon = lista[indicePokemon];
 
   return (

@@ -1,7 +1,6 @@
 .buscador{
     display: flex;
     justify-content: center;
-
 }
 
 .inputContenedor {
@@ -9,8 +8,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 96%
-
+    width: 96%;
+    min-height: 120px;
   }
   
   #input {
@@ -29,8 +28,7 @@
     left: 46%;
   }
 
-  .lupita{
-    position: absolute;
-    left: 45%;
-    top: 39%;
+  .innput{
+    font-family: "Poppins";
+    font-size: 20px;
   }

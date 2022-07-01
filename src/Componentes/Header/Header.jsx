@@ -6,7 +6,13 @@ export default function Header({ ordenarPorNombre, ordenandoPorNombre }) {
   return (
     <header>
       <div className="titulo">
-        <img src={Pokeball} width="48px" height="48px" alt="Pokeball" />
+        <img
+          className="pokeballTitulo"
+          src={Pokeball}
+          width="48px"
+          height="48px"
+          alt="Pokeball"
+        />
         <h1>Pokédex</h1>
       </div>
       <div className="filtro" onClick={ordenarPorNombre}>

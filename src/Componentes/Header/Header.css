@@ -5,6 +5,22 @@ header {
     padding-right: 41px;
 }
 
+.pokeballTitulo{
+    animation-name: pkTitulo;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes pkTitulo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
 .titulo, .filtro{
     display: flex;
     align-items: center;

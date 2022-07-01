@@ -90,8 +90,26 @@
   left: 80px;
   top: 80px;
 }
+
 .imgPoke {
   z-index: 1;
+  
+}
+
+.imgPoke:hover{
+animation-name: imagenPkmnDetalle;
+animation-duration: .2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes imagenPkmnDetalle {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-8px)
+  }
 }
 
 .card {
