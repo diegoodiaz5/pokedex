@@ -1,7 +1,17 @@
 .tarjetas{
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: flex-start;
-    
+    padding-inline-start: 8%;
 }
+
+/* ////////////Media Query ///////// */
+
+@media screen and (max-width: 390px) {
+    .tarjetas {
+      padding-inline-start: 6%;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }

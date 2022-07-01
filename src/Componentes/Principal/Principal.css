@@ -11,4 +11,17 @@
     grid-template-rows: 0.1fr 0.4fr 1.5fr;
     background: #F7F7F7;
     border-radius: 12px;
+    width: 100%;
   }
+
+  /* ////////////Media Query ///////// */
+
+@media screen and (max-width: 390px) {
+  .principal {
+    padding: 15px 10px;
+  }
+  .conteinerPrincipal {
+    grid-template-rows: 0.1fr 0.1fr 1.5fr;
+    
+  }
+}

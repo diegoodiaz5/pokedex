@@ -18,17 +18,19 @@
     padding: 15px 15px 15px 48%;
     width: 100%;
     border-radius: 12px;
-  }
-  
-  .input-icon {
-    color: #191919;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 46%;
-  }
-
-  .innput{
     font-family: "Poppins";
     font-size: 20px;
   }
+
+  /* ////////////Media Query ///////// */
+
+@media screen and (max-width: 390px) {
+  #input {
+    padding: 0px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .inputContenedor {
+    height: 120px;
+  }
+}

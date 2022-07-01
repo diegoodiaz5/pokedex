@@ -33,3 +33,25 @@ animation-timing-function: linear;
 .filtro{
     gap: 10px;
 }
+
+/* ////////////Media Query ///////// */
+
+@media screen and (max-width: 390px) {
+    header {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .titulo {
+      font-size: 1em;
+      justify-content: space-between;
+    }
+    .filtro {
+      font-size: 0.8em;
+      justify-content: flex-end;
+      padding-left: 15px;
+    }
+    .filtro > img {
+      width: 25px;
+      height: 25px;
+    }
+  }
